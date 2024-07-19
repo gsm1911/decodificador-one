@@ -2,14 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
-html{
-    background-color: black;
+html {
+    background-image: url('https://i.pinimg.com/originals/c5/9a/d2/c59ad2bd4ad2fbacd04017debc679ddb.gif');
 }
 .cabecalho {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     padding: 0px;
     gap: 40px;
 }
@@ -25,24 +21,39 @@ html{
 .conteudo {
     padding: 120px 240px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 160px;
 }
 
-.conteudo-entrada {
-    width: 680px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
 
 .conteudo-entrada-texto {
     height: 600px;
-    width: 600px;
-    background-color: black;
+    width: 680px;
+    background-color: rgb(1, 1, 1);
     color: rgb(0, 255, 0);
+    font-size: 24px;
+    resize: none;
+    outline: none;
+    border-color: black;
+    border-radius: 20px;
+    text-indent: 10px;
+    text-overflow: clip;
+}
+
+.conteudo-saida {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-saida-texto {
+    padding: 0%;
+    height: 600px;
+    width: 400px;
+    background-color: rgb(1, 1, 1);
+    color: rgb(0, 255, 0);
+    border-color: black;
+    border-radius: 20px;
     font-size: 32px;
-    border: none;
     resize: none;
     outline: none;
 }
@@ -50,11 +61,9 @@ html{
 .botoes{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     padding: 0px;
     gap: 24px;
 
-    position: absolute;
     width: 680px;
     height: 67px;
     left: 240px;
@@ -62,21 +71,26 @@ html{
 }
 
 .botao-criptografa {
-    padding: 24px;
+    margin: auto;
+    font-size: 24px;
+    padding: 12px;
     gap: 8px;
     width: 328px;
     height: 67px;
-    background: #0A3871;
+    background: green;
     border-radius: 24px;
     border: none;
+    color: black;
 }
 
 .botao-descriptografa {
-    padding: 24px;
+    font-size: 24px;
+    padding: 12px;
     gap: 8px;
     width: 328px;
     height: 67px;
-    background: #D8DFE8;
-    border: 1px solid #0A3871;
+    background: black;
+    border: 2px solid green;
     border-radius: 24px;
+    color: white;
 }
