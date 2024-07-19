@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: black;
+}
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+}
+
+.cabecalho-imagem {
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.conteudo {
+    padding: 120px 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo-entrada {
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.conteudo-entrada-texto {
+    height: 600px;
+    width: 600px;
+    background-color: black;
+    color: rgb(0, 255, 0);
+    font-size: 32px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+}
+
+.botao-criptografa {
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    border: none;
+}
+
+.botao-descriptografa {
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
