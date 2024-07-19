@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/matrix');
+@import url('https://fonts.cdnfonts.com/css/glitch');
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +21,14 @@ html {
     top: 40px;
 }
 
+.titulo-pagina {
+    font-family: 'Matrix', sans-serif;
+    color: green;
+    text-align: center;
+}
+
 .conteudo {
+    font-family: 'GLITCH', sans-serif;
     padding: 120px 240px;
     display: flex;
     flex-direction: row;
@@ -28,6 +38,7 @@ html {
 
 
 .conteudo-entrada-texto {
+    font-family: 'GLITCH', sans-serif;
     height: 600px;
     width: 680px;
     background-color: rgb(1, 1, 1);
@@ -39,6 +50,11 @@ html {
     border-radius: 20px;
     text-indent: 10px;
     text-overflow: clip;
+}
+
+.conteudo-entrada-aviso {
+    color: rgb(91, 91, 95);
+    padding: 2%;
 }
 
 .conteudo-saida-texto {
