@@ -38,6 +38,8 @@ html {
 
 
 .conteudo-entrada-texto {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
     font-family: 'GLITCH', sans-serif;
     height: 600px;
     width: 680px;
@@ -48,8 +50,7 @@ html {
     outline: none;
     border-color: black;
     border-radius: 20px;
-    text-indent: 10px;
-    text-overflow: clip;
+    padding: 10px 15px 15px 15px;
 }
 
 .conteudo-entrada-aviso {
@@ -58,6 +59,10 @@ html {
 }
 
 .conteudo-saida-texto {
+    
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    font-family: 'GLITCH', sans-serif;
     padding: 0%;
     height: 600px;
     width: 400px;
@@ -69,6 +74,7 @@ html {
     text-indent: 10px;
     resize: none;
     outline: none;
+    padding: 10px 15px 15px 15px;
 }
 
 .botoes{

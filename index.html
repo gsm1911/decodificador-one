@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <script src="main.js"></script>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +9,7 @@
 </head>
 
 <body>
+    <script src="main.js"></script>
     <header class="cabecalho">
         <img src="/assets/logo.png" alt="Logotipo da Alura" class="cabecalho-imagem" />
     </header>
@@ -20,8 +20,8 @@
                 placeholder="Insira uma mensagem para criptografar"></textarea>
             <p class="conteudo-entrada-aviso">Somente letras minusculas e sem acento.</p>
             <div class="botoes">
-                <button class="botao-criptografa">Criptografar</button>
-                <button class="botao-descriptografa">Descriptografar</button>
+                <button onclick="criptografar()" class="botao-criptografa">Criptografar</button>
+                <button onclick="descriptografar()"class="botao-descriptografa">Descriptografar</button>
             </div>
         </div>
 
