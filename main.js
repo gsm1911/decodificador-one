@@ -33,19 +33,14 @@ function criptografar(){
 }
 
 function descriptografar(){
-    let entrada = String(document.getElementById('entrada_texto').value);
-    let saida0 = entrada.replace("enter", "e");
-    let saida1 = saida0.replace("imes", "i");
-    let saida2 = saida1.replace("ai", "a");
-    let saida3 = saida2.replace("ober", "o");
-    let saida4 = saida3.replace("ufat", "u");
-    for(let i = 0; i<9; i++){
-        saida0 = saida4.replace("enter", "e");
-        saida1 = saida0.replace("imes", "i");
-        saida2 = saida1.replace("ai", "a");
-        saida3 = saida2.replace("ober", "o");
-        saida4 = saida3.replace("ufat", "u");
-    }
+    let entrada = document.getElementById("entrada_texto").value
 
-    document.getElementById("saida_texto").value = saida4;
+    entrada = entrada.replaceAll("enter", "e");
+    entrada = entrada.replaceAll("imes", "i");
+    entrada = entrada.replaceAll("ai", "a");
+    entrada = entrada.replaceAll("ober", "o");
+    entrada = entrada.replaceAll("ufat", "u");
+
+    console.log(entrada);
+    document.getElementById("saida_texto").value = entrada;
 }
